@@ -6,7 +6,7 @@ node_modules/
 
 .yarn-integrity
 .yarn/*
-\!.yarn/releases/
+!.yarn/releases/
 
 .env
 .env.test
