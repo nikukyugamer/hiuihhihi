@@ -3,9 +3,27 @@
 
 __metadata:
   version: 6
+  cacheKey: 8
 
-"root-workspace-0b6124@workspace:.":
+"dotenv@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "dotenv@npm:16.0.0"
+  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
+  languageName: node
+  linkType: hard
+
+"hiuihhihi@workspace:.":
   version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
+  resolution: "hiuihhihi@workspace:."
+  dependencies:
+    dotenv: ^16.0.0
+    twitter-api-v2: ^1.11.1
   languageName: unknown
   linkType: soft
+
+"twitter-api-v2@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "twitter-api-v2@npm:1.11.1"
+  checksum: 29733121ab96d86ded279f0a0775e8460f17b0889b46c60edc150859b77571888973515ec5e62bd20bf48aee213b164b63a704b16ede9f97b6e3bcadeee91044
+  languageName: node
+  linkType: hard
