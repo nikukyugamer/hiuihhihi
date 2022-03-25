@@ -15,5 +15,6 @@ module.exports = {
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': ['error'],
     '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 }
