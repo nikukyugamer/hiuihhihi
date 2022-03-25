@@ -1,7 +1,7 @@
 require('dotenv').config()
 const { TwitterApi } = require('twitter-api-v2')
 
-async function getMentionTimelineTweets() {
+const sampleTwitterApp = async function () {
   const userClient = new TwitterApi({
     appKey: process.env.CONSUMER_APP_KEY,
     appSecret: process.env.CONSUMER_APP_SECRET,
@@ -16,7 +16,7 @@ async function getMentionTimelineTweets() {
   console.log(me)
 }
 
-getMentionTimelineTweets()
+sampleTwitterApp()
 
 // {
 //   id: 150552419,
