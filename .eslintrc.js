@@ -12,7 +12,7 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint'],
   rules: {
-    'space-before-function-paren': 'off',
+    'space-before-function-paren': 0,
     '@typescript-eslint/space-before-function-paren': ['error'],
   },
 }
