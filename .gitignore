@@ -20,3 +20,5 @@ config/serviceAccountKey.json
 
 apps/*
 !sampleApp.ts
+
+.coverage/
