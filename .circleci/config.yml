@@ -6,7 +6,7 @@ orbs:
 jobs:
   hiuihhihi_build_and_test:
     docker:
-      - image: cimg/node:18.2
+      - image: cimg/node:18.3
     steps:
       - checkout
       - node/install-packages:
