@@ -9,7 +9,7 @@
     "dotenv": "16.0.1",
     "eslint": "8.17.0",
     "eslint-plugin-jest": "26.5.3",
-    "firebase-admin": "10.3.0",
+    "firebase-admin": "11.0.0",
     "jest": "28.1.1",
     "prettier": "2.7.1",
     "ts-jest": "28.0.5",
