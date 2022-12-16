@@ -2923,9 +2923,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:11.3.0":
-  version: 11.3.0
-  resolution: "firebase-admin@npm:11.3.0"
+"firebase-admin@npm:11.4.0":
+  version: 11.4.0
+  resolution: "firebase-admin@npm:11.4.0"
   dependencies:
     "@fastify/busboy": ^1.1.0
     "@firebase/database-compat": ^0.2.6
@@ -2942,7 +2942,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 248a366e8eecd50d8b4fcc03f68dde939a450b1d41e4cd67cc9ff75f5000b7ac93118af8a2b0dcdd67f383cfe7f568b77a436b2a860f7d37054df39fe888f46c
+  checksum: 7a01fb4ef123380d39cbcbc130414eabf38a46f2ca0288d3c93700a87e26085d06ed6016c6f73100165186ba6902cc4b6c92713ae0985f286984a89d47e45165
   languageName: node
   linkType: hard
 
@@ -3344,7 +3344,7 @@ __metadata:
     dotenv: 16.0.3
     eslint: 8.29.0
     eslint-plugin-jest: 27.1.7
-    firebase-admin: 11.3.0
+    firebase-admin: 11.4.0
     jest: 29.3.1
     prettier: 2.8.1
     ts-jest: 29.0.3
