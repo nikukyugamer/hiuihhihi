@@ -1,31 +1,35 @@
 name: (GitHub Actions) Node.js CI
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
-      - development
-  pull_request:
-    branches:
-      - development
+      - '**'
+    tags-ignore:
+      - 'v*.*.*'
+
+env:
+  TZ: Asia/Tokyo
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Node.js のセットアップ
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version-file: '.node-version'
         cache: 'yarn'
-    - name: $ yarn install
+        cache-dependency-path: yarn.lock
+    - name: $ yarn install を実行する
       run: |
         yarn install --frozen-lockfile
-    - name: Jest
+    - name: Jest を実行する
       run: |
         yarn test
     - name: Codecov の結果をアップロードする

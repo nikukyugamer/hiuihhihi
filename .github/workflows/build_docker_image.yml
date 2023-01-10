@@ -1,17 +1,23 @@
-name: (GitHub Actions) Build Docker Image CI
+name: Build Docker Image CI
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
-      - development
-  pull_request:
-    branches:
-      - development
+      - '**'
+    tags-ignore:
+      - 'v*.*.*'
+
+env:
+  TZ: Asia/Tokyo
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
